@@ -1,10 +1,11 @@
 identifier: rable
 name: rable
-type: mcu
+type: keyboard
 arch: arm
 toolchain:
   - zephyr
   - gnuarmemb
+  - xtools
 supported:
   - adc
   - usb_device
