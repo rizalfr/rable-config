@@ -10,6 +10,9 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define DEFAULT 0
+#define CEMACEM   1
+
 / {
   keymap {
     compatible = "zmk,keymap";
@@ -27,7 +30,7 @@
 &kp F2  &kp TAB    &kp Q    &kp W    &kp E    &kp R    &kp T    &kp Y    &kp U    &kp I      &kp O    &kp P     &kp LBKT   &kp RBKT       &kp BSLH        &kp PG_UP
 &kp F3  &kp CLCK   &kp A    &kp S    &kp D    &kp F    &kp G    &kp H    &kp J    &kp K      &kp L    &kp SEMI  &kp SQT           &kp RET                 &kp PG_DN
 &kp F4  &kp LSHFT  &kp Z    &kp X    &kp C    &kp V    &kp B    &kp N    &kp M    &kp COMMA  &kp DOT  &kp FSLH                      &kp RSHFT   &kp UP    &kp END
-&kp F5  &kp LCTRL  &kp LGUI &kp LALT                                 &kp SPACE                                             &mo 1      &kp LEFT  &kp DOWN  &kp RIGHT
+&kp F5  &kp LCTRL  &kp LGUI &kp LALT                                 &kp SPACE                                             &mo CEMACEM  &kp LEFT  &kp DOWN  &kp RIGHT
       >;
     };
 
