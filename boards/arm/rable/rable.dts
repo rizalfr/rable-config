@@ -157,7 +157,7 @@
     status = "okay";
     mosi-pin = <31>; // was 5 in zaphod, 6 in ffkb byo-mcu
     // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
-    sck-pin = <6>;
+    sck-pin = <5>;
     miso-pin = <8>;
     cs-gpios = <&gpio0 31 GPIO_ACTIVE_HIGH>;
 
