@@ -39,8 +39,6 @@ jobs:
         run: west list
       - name: Build (west build)
         run: west build -s zmk/app -b rable -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: Build (reset settings)
-        run: west build -s zmk/app -b rable -- -DSHIELD=settings_reset -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
       - name: rable .config
         if: ${{ always() }}
         run: cat -n build/zephyr/.config
