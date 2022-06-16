@@ -1,5 +1,5 @@
-identifier: ra.ble
-name: ra.ble
+identifier: rable
+name: rable
 type: keyboard
 arch: arm
 toolchain:

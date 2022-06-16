@@ -1,13 +1,13 @@
 # Copyright (c) 2020 Pete Johanson
 # SPDX-License-Identifier: MIT
 
-if BOARD_ra.ble
+if BOARD_RABLE
 
 config BOARD
-	default "ra.ble"
+	default "rable"
 
 config ZMK_KEYBOARD_NAME
-	default "ra.ble"
+	default "rable"
 
 if USB
 
@@ -34,4 +34,4 @@ config ZMK_USB
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
-endif # BOARD_ra.ble
+endif # BOARD_RABLE
