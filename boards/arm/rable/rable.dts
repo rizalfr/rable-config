@@ -10,8 +10,8 @@
 #include <dt-bindings/led/led.h>
 
 / {
-    model = "rable";
-    compatible = "rable";
+    model = "ra.ble";
+    compatible = "ra.ble";
 
     chosen {
         zephyr,code-partition = &code_partition;
@@ -155,7 +155,7 @@
 &spi0 {
     compatible = "nordic,nrf-spim";
     status = "okay";
-    mosi-pin = <31>; // was 5 in zaphod, 6 in rable byo-mcu
+    mosi-pin = <31>; // was 5 in zaphod, 6 in ra.ble byo-mcu
     // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
     sck-pin = <11>;
     miso-pin = <8>;
